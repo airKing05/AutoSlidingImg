@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSlidingImg</title>
+</head>
+<body>
+    <style>
+        *{
+            /* max-width: 100%; */
+            border: 2px solid red;
+        }
+        body{
+            padding: 0 ;
+            margin-bottom: 10px ;
+        }
+        #main{
+            position: relative;;
+            /* width: 100%; */
+           
+        }
+        img{
+            width: 100%;
+            height: 650px; 
+        }
+    </style>
+    <div id="main">
+        <div class="one">
+            <img src="img1.jpg" id="slidingimg">
+        </div>
+        <div class="two">
+            <img src="img2.jpg" id="slidingimg">
+        </div>
+        <div class="three">
+            <img src="img4.jpg" id="slidingimg">
+        </div>
+        <div class="four">
+            <img src="img5.jpg" id="slidingimg">
+        </div>
+        <div class="five">
+            <img src="img6.jpg" id="slidingimg">
+        </div>
+        <div class="six">
+            <img src="img7.jpg" id="slidingimg">
+        </div>
+    </div>
+
+    <script>
+        function one() {
+            document.getElementById("slidingimg").src="img2.jpg";
+        }
+        setInterval(one,2000);
+
+        function two() {
+            document.getElementById("slidingimg").src="img4.jpg";
+        }
+        setInterval(two,4000);
+
+        function three() {
+            document.getElementById("slidingimg").src="img5.jpg";
+        }
+        setInterval(three,6000);
+
+        function four() {
+            document.getElementById("slidingimg").src="img6.jpg";
+        }
+        setInterval(four,8000);
+
+        function five() {
+            document.getElementById("slidingimg").src="img7.jpg";
+        }
+        setInterval(five,10000);
+
+        function six() {
+            document.getElementById("slidingimg").src="img1.jpg";
+        }
+        setInterval(six,12000);
+        
+    
+    </script>
+</body>
+</html>
